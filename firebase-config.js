@@ -23,13 +23,13 @@ import { getStorage } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-
 //   asıl koruma Firestore/Storage güvenlik kurallarıyla sağlanır.)
 // ────────────────────────────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey:            "BURAYA_API_KEY",
-  authDomain:        "BURAYA_AUTH_DOMAIN",
-  projectId:         "BURAYA_PROJECT_ID",
-  storageBucket:     "BURAYA_STORAGE_BUCKET",
-  messagingSenderId: "BURAYA_SENDER_ID",
-  appId:             "BURAYA_APP_ID",
-  measurementId:     "BURAYA_MEASUREMENT_ID"
+  apiKey: "AIzaSyA9q1e_Eq3NMiyXGVJZil1CIWdfOof2yOs",
+  authDomain: "okcutakip.firebaseapp.com",
+  projectId: "okcutakip",
+  storageBucket: "okcutakip.firebasestorage.app",
+  messagingSenderId: "352557086680",
+  appId: "1:352557086680:web:9845916795413e51c524ad",
+  measurementId: "G-48F86YNJ75"
 };
 
 // ── Başlat ──
