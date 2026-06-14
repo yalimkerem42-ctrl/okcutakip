@@ -27,13 +27,13 @@ import {
 //  (Bu değerlerin tarayıcıda görünür olması normaldir ve güvenlidir.)
 // ────────────────────────────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey:            "BURAYA_API_KEY_YAZIN",
-  authDomain:        "BURAYA_AUTH_DOMAIN_YAZIN",
-  projectId:         "BURAYA_PROJECT_ID_YAZIN",
-  storageBucket:     "BURAYA_STORAGE_BUCKET_YAZIN",
-  messagingSenderId: "BURAYA_SENDER_ID_YAZIN",
-  appId:             "BURAYA_APP_ID_YAZIN",
-  measurementId:     "BURAYA_MEASUREMENT_ID_YAZIN"
+  apiKey: "AIzaSyA9q1e_Eq3NMiyXGVJZil1CIWdfOof2yOs",
+  authDomain: "okcutakip.firebaseapp.com",
+  projectId: "okcutakip",
+  storageBucket: "okcutakip.firebasestorage.app",
+  messagingSenderId: "352557086680",
+  appId: "1:352557086680:web:9845916795413e51c524ad",
+  measurementId: "G-48F86YNJ75"
 };
 
 // ── Firebase'i başlat ──
