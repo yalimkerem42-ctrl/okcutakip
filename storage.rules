@@ -1,0 +1,28 @@
+rules_version = '2';
+
+// ════════════════════════════════════════════════════════════════════
+//  STORAGE GÜVENLİK KURALLARI — OKÇUTAKİP (profil fotoğrafları)
+//  Firebase Console → Storage → Rules sekmesine yapıştırın ve
+//  "Yayınla" (Publish) deyin.
+//
+//  Yol: users/{uid}/profile_photo
+//   • Okuma: herkese açık (avatar <img>/arka plan ile gösterilir)
+//   • Yazma: yalnızca dosyanın sahibi, en fazla 2 MB, yalnızca resim
+// ════════════════════════════════════════════════════════════════════
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    match /users/{uid}/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null
+                   && request.auth.uid == uid
+                   && request.resource.size < 2 * 1024 * 1024
+                   && request.resource.contentType.matches('image/.*');
+    }
+
+    // Diğer her şey kapalı
+    match /{allOther=**} {
+      allow read, write: if false;
+    }
+  }
+}
